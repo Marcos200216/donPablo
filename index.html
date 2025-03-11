@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palabras de Esperanza - Don Pablo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para la ventana emergente (modal) */
+        .modal {
+            display: none; /* Inicialmente oculta */
+            position: fixed;
+            z-index: 1; /* Se asegura que esté sobre el contenido */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sección de motivación principal -->
+        <section class="motivational-section">
+            <div class="message-box">
+                <h2>¡Querido Don Pablo!</h2>
+                <p>
+                    Hoy quiero recordarle lo profundamente amado que eres por Dios. Él, en su infinita bondad y misericordia, le ha dado fuerzas para afrontar cada día, y en medio de todo lo que ha vivido, su amor nunca le ha dejado. La Biblia nos enseña que “el Señor es mi pastor; nada me faltará” (Salmo 23:1), y quiero que sepas que, aunque el camino no siempre sea fácil, Dios te guía con su luz, y siempre tiene un plan perfecto para ti.
+                </p>
+                <p>
+                    Usted es un hombre valioso, lleno de dignidad y fortaleza. Hoy, más que nunca, es el momento de recordar que, aunque las circunstancias puedan parecer difíciles, nada lo separará del amor de Dios. Recuerde las palabras del apóstol Pablo: “Pero en todas estas cosas somos más que vencedores por medio de Aquel que nos amó” (Romanos 8:37).
+                </p>
+                <p>
+                    Además, quiero hacerle saber lo afortunado y bendecido que es al contar con el amor incondicional de Doña Julia. Ella es un verdadero regalo de Dios para usted. En cada gesto, en cada palabra de apoyo y cuidado, está el reflejo del amor divino. Juntos, como pareja, son un ejemplo de la bondad de Dios y su gracia. No está solo Don Pablo. Dios le ha rodeado de amor y compañía en este camino, y puede estar seguro de que Él está con usted en cada paso.
+                </p>
+                <p>
+                    Dios lo ama profundamente, y nosotros también, siempre tenga en cuenta que es muy importante para nuestras vidas, su existir es una bendición para nosotros. Que en cada momento encuentre paz en su presencia y fortaleza en su amor.
+                </p>
+                
+                <p>
+                    En estos momentos difíciles, quiero recordarle lo valioso que es para Dios. Dios le ama y Él tiene un plan perfecto para su vida. ¡No está solo Don Pablo!
+                </p>
+                <p>
+                    Dios es más grande que cualquier enfermedad, más poderoso que cualquier temor, y su amor es más fuerte que cualquier prueba que podamos enfrentar.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección de preguntas motivacionales -->
+        <section class="questions-section">
+            <div class="question-box">
+                <h3>¿Quieres saber cómo puedes ser salvo?</h3>
+                <button class="btn-see-more" onclick="showModal()">Ver más</button>
+            </div>
+            <div class="question-box">
+                <h3>¿Qué puedo hacer cuando estoy triste?</h3>
+                <button class="btn-see-more" onclick="showModal()">Ver más</button>
+            </div>
+            <div class="question-box">
+                <h3>¿Cómo puedo tener paz en medio de la tormenta?</h3>
+                <button class="btn-see-more" onclick="showModal()">Ver más</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Por la noche tendrá información detallada de esto, servidor en descanso jeje.</p>
+        </div>
+    </div>
+
+    <script>
+        // Mostrar la ventana emergente
+        function showModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        // Cerrar la ventana emergente
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        // Cerrar la ventana emergente si se hace clic fuera de ella
+        window.onclick = function(event) {
+            if (event.target == document.getElementById("myModal")) {
+                document.getElementById("myModal").style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
